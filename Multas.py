@@ -34,3 +34,12 @@ while True:
     print("3 - Autoestrada")
     print("0 - Sair")
     opção = input("Escolha a opção: ")
+
+    if opção == '0':
+        print("Programa encerrado.")
+        break
+    if opção not in ('1', '2', '3'):
+        print("Opção inválida, tente novamente.")
+        continue
+
+    
