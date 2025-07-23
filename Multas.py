@@ -25,3 +25,12 @@ def multa_autoestrada(v):
         return 120
     else:
         return 360
+    
+while True:
+
+    print("\nCalcular multa de velocidade")
+    print("1 - Localidade")
+    print("2 - Fora da localidade")
+    print("3 - Autoestrada")
+    print("0 - Sair")
+    opção = input("Escolha a opção: ")
