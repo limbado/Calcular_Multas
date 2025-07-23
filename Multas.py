@@ -27,7 +27,6 @@ def multa_autoestrada(v):
         return 360
     
 while True:
-
     print("\nCalcular multa de velocidade")
     print("1 - Localidade")
     print("2 - Fora da localidade")
@@ -42,4 +41,17 @@ while True:
         print("Opção inválida, tente novamente.")
         continue
 
-    
+    velocidade = float(input("Digite a velocidade do carro (km/h): "))
+
+    if velocidade < 50:
+        print("Sem multa. Velocidade dentro do permitido.")
+        continue
+
+    if opção == '1':
+        multa = multa_localidade(velocidade)
+    elif opção == '2':
+        multa = multa_fora_localidade(velocidade)
+    else:
+        multa = multa_autoestrada(velocidade)
+
+    print(f"Multa a pagar: {multa}€")
